@@ -71,7 +71,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "Merthan Karaman and Faaaruk" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "Merthan Karaman" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -145,7 +145,7 @@
 //#define BLUETOOTH
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "BAHTSIZ V2"
+#define CUSTOM_MACHINE_NAME "CP-01"
 //#define BL_TOUCH
 
 // Printer's unique ID, used by some programs to differentiate between machines.
@@ -1394,9 +1394,9 @@
 // @section machine
 
 // The size of the printable area
-#define X_BED_SIZE 215//220 // Nozzle is at X4 when homed
-#define Y_BED_SIZE 215//218 // Nozzle is at Y2 when homed
-#define Z_BED_SIZE 215//220 // Nozzle is at Z2 when homed
+#define X_BED_SIZE 215// Nozzle is at X4 when homed
+#define Y_BED_SIZE 215// Nozzle is at Y2 when homed
+#define Z_BED_SIZE 215// Nozzle is at Z2 when homed
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
