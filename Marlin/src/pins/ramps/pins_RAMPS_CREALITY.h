@@ -74,16 +74,6 @@
 #define EXP3_PIN                              11  // SERVO0_PIN
 #define EXP4_PIN                              12  // PS_ON_PIN
 
-#ifndef Y_STOP_PIN
-  #ifndef Y_MIN_PIN
-    #define Y_MIN_PIN                         PJ1//14
-    //DDRJ = 
-  #endif
-  #ifndef Y_MAX_PIN
-    #define Y_MAX_PIN                         PC7
-  #endif
-#endif
-
 #define SUICIDE_PIN                           12  // Used by CR2020 Industrial series
 #ifndef SUICIDE_PIN_STATE
   #define SUICIDE_PIN_STATE                 HIGH
