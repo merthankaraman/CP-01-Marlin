@@ -71,7 +71,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "Merthan Karaman" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "Merthan Karaman and Faaaruk" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -145,10 +145,8 @@
 //#define BLUETOOTH
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "CP-01"
-
-//#define BL_TOUCH //By uncommenting this line you can easily enable bltouch
-//Pin for BL Touch is D11
+#define CUSTOM_MACHINE_NAME "BAHTSIZ V2"
+#define BL_TOUCH
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
@@ -508,7 +506,7 @@
 
 // Dummy thermistor constant temperature readings, for use with 998 and 999
 #define DUMMY_THERMISTOR_998_VALUE  25
-#define DUMMY_THERMISTOR_999_VALUE 100
+#define DUMMY_THERMISTOR_999_VALUE 200
 
 // Resistor values when using MAX31865 sensors (-5) on TEMP_SENSOR_0 / 1
 //#define MAX31865_SENSOR_OHMS_0      100   // (Ω) Typically 100 or 1000 (PT100 or PT1000)
@@ -1197,6 +1195,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
+
 #if DISABLED(BL_TOUCH)
   #define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
 #endif
@@ -1280,7 +1279,7 @@
  * Example: `M851 Z-5` with a CLEARANCE of 4  =>  9mm from bed to nozzle.
  *     But: `M851 Z+1` with a CLEARANCE of 2  =>  2mm from bed to nozzle.
  */
-#define Z_CLEARANCE_DEPLOY_PROBE   10 // Z Clearance for Deploy/Stow
+#define Z_CLEARANCE_DEPLOY_PROBE    5 // Z Clearance for Deploy/Stow
 #define Z_CLEARANCE_BETWEEN_PROBES  5 // Z Clearance between probe points
 #define Z_CLEARANCE_MULTI_PROBE     5 // Z Clearance between multiple probes
 //#define Z_AFTER_PROBING           5 // Z position after probing is done
@@ -1402,9 +1401,9 @@
 // @section machine
 
 // The size of the printable area
-#define X_BED_SIZE 215// Nozzle is at X4 when homed
-#define Y_BED_SIZE 215// Nozzle is at Y2 when homed
-#define Z_BED_SIZE 215// Nozzle is at Z2 when homed
+#define X_BED_SIZE 215//220 // Nozzle is at X4 when homed
+#define Y_BED_SIZE 215//218 // Nozzle is at Y2 when homed
+#define Z_BED_SIZE 215//220 // Nozzle is at Z2 when homed
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0

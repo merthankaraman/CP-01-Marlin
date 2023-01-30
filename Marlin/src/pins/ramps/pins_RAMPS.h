@@ -152,7 +152,7 @@
 #ifndef E0_ENABLE_PIN
   #define E0_ENABLE_PIN                       24
 #endif
-#ifndef E0_CS_PIN
+#ifndef E0_CS_PINf
   #define E0_CS_PIN                           42
 #endif
 
